@@ -1,0 +1,9 @@
+.Link {
+  color: map-get($colors, light-green);
+  font-family: 'Geomanist Book';
+  text-decoration: none;
+
+  &--pink {
+    color: map-get($colors, pink);
+  }
+}
