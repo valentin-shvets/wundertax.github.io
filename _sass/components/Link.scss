@@ -6,4 +6,8 @@
   &--pink {
     color: map-get($colors, pink);
   }
+
+  &--thin {
+    font-family: 'Geomanist';
+  }
 }
