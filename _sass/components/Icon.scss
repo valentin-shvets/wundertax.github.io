@@ -12,6 +12,10 @@
     vertical-align: middle;
   }
 
+  &--align-end {
+    margin-left: auto;
+  }
+
   /*
   Sizes
    */
@@ -33,22 +37,42 @@
   /*
   Icons
    */
-  &--arrow-up {
-    background-image: url('/assets/images/arrow.svg');
+  &--pink-arrow-up {
+    background-image: url('/assets/images/arrow-pink.svg');
     transform: rotate(270deg);
   }
 
-  &--arrow-up {
-    background-image: url('/assets/images/arrow.svg');
+  &--pink-arrow-left {
+    background-image: url('/assets/images/arrow-pink.svg');
     transform: rotate(180deg);
   }
 
-  &--arrow-down {
-    background-image: url('/assets/images/arrow.svg');
+  &--pink-arrow-down {
+    background-image: url('/assets/images/arrow-pink.svg');
     transform: rotate(90deg);
   }
 
-  &--arrow-right {
-    background-image: url('/assets/images/arrow.svg');
+  &--pink-arrow-right {
+    background-image: url('/assets/images/arrow-pink.svg');
+  }
+
+  &--white-arrow-up {
+    background-image: url('/assets/images/arrow-white.svg');
+    transform: rotate(180deg);
+  }
+
+  &--white-arrow-left {
+    background-image: url('/assets/images/arrow-white.svg');
+    transform: rotate(90deg);
+  }
+
+  &--white-arrow-down {
+    background-image: url('/assets/images/arrow-white.svg');
+
+  }
+
+  &--white-arrow-right {
+    background-image: url('/assets/images/arrow-white.svg');
+    transform: rotate(270deg);
   }
 }
