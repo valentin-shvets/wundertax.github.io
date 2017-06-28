@@ -1,0 +1,21 @@
+<div class="Team">
+
+  <div class="Text Text--h2 Text--bold">
+    Meet.<br />
+    the.<br />
+    team.<br />
+  </div>
+
+  <div class="Team__members">
+    {% for member in site.members %}
+      <div class="Team__member">
+        <img class="Team__member-photo" src="/assets/images/members/{{member.name}}.png" />
+        <div class="Team__member-info">
+          <div class="Text Text--lighter-green Text--h3">{{member.name}}</div>
+          <div class="Text Text--white Text--detail">{{member.title}}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>

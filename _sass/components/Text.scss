@@ -53,12 +53,20 @@
   /*
   Colors
    */
+  &--white {
+    color: white;
+  }
+
   &--green {
     color: map-get($colors, green);
   }
 
   &--light-green {
     color: map-get($colors, light-green);
+  }
+
+  &--lighter-green {
+    color: map-get($colors, lighter-green);
   }
 
   &--pink {

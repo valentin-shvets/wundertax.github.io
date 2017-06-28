@@ -1,5 +1,5 @@
 <div class="Box Box--section">
-  <div class="HomePage__products">
+  <div class="Products">
 
     <div class="Text Text--pink Text--h2 Text--bold">Taxes suck</div>
 
@@ -7,7 +7,7 @@
       You can get a lot of money back with tax declarations, but it's complicated, time-consuming and no one really understands them.
     </div>
 
-    <div class="HomePage__mission">
+    <div class="Products__mission">
       <div class="Text Text--bold Text--dark-green Text--h2">We are on a mission to change that:</div>
       <div class="Text Text--dark-green Text--copy">
         With specialized tax tools and modern UX, we are currently rethinking the whole tax industry..
@@ -15,14 +15,12 @@
     </div>
 
     <div class="Text Text--bold Text--dark-green Text--h2">Our Products</div>
-    <div class="HomePage__products-list">
+    <div class="Products__list">
       {% for product in site.products %}
-      <div class="HomePage__product">
-        <div class="Box Box--rounded">
-          <a href="{{ product.href }}" target="_blank">
-            <img class="HomePage__product-logo" src="/assets/images/products/{{ product.name }}.svg" />
-          </a>
-        </div>
+      <div class="Products__product">
+        <a href="{{ product.href }}" target="_blank">
+          <img src="/assets/images/products/{{ product.name }}.svg" />
+        </a>
       </div>
       {% endfor %}
     </div>
