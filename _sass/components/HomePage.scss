@@ -14,14 +14,15 @@
   }
 
   &__products-list {
-    padding-top: 10px;
   }
 
   &__product {
-    padding: 30px 65px;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
 
-    &-name {
-
+    &-logo {
+      margin: 30px 65px;
     }
   }
 }

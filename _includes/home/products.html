@@ -16,18 +16,15 @@
 
     <div class="Text Text--bold Text--dark-green Text--h2">Our Products</div>
     <div class="HomePage__products-list">
-      <div class="Box Box--rounded">
-        <div class="HomePage__product">
-          <img src="/assets/images/product-logo.svg" />
+      {% for product in site.products %}
+      <div class="HomePage__product">
+        <div class="Box Box--rounded">
+          <a href="{{ product.href }}" target="_blank">
+            <img class="HomePage__product-logo" src="/assets/images/products/{{ product.name }}.svg" />
+          </a>
         </div>
       </div>
-
-      <div class="Box Box--rounded">
-        <div class="HomePage__product">
-          <div class="HomePage__product-name">studenten</div>
-          <img src="/assets/images/product-logo.svg" />
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
   </div>
