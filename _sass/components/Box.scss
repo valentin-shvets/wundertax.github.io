@@ -1,0 +1,15 @@
+.Box {
+  background: white;
+  border: 1px solid map-get($colors, lightest-green);
+
+  &--section {
+    border-right: none;
+    border-left: none;
+  }
+
+  &--rounded {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+}

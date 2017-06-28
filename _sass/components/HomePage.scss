@@ -1,0 +1,27 @@
+.HomePage {
+  &__headline {
+    padding: 30px;
+    padding-top: 120px;
+  }
+
+  &__products {
+    padding: 60px 30px;
+  }
+
+  &__mission {
+    padding-bottom: 80px;
+    padding-top: 50px;
+  }
+
+  &__products-list {
+    padding-top: 10px;
+  }
+
+  &__product {
+    padding: 30px 65px;
+
+    &-name {
+
+    }
+  }
+}

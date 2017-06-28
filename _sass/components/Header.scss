@@ -1,0 +1,9 @@
+.Header {
+  padding: 10px;
+
+  &__logo {
+    background: url("/assets/images/logo.svg") no-repeat center;
+    height: 30px;
+    width: 40px;
+  }
+}

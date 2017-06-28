@@ -1,0 +1,54 @@
+.Icon {
+  background: no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  padding-left: 10px;
+
+  /*
+  Placement
+   */
+  &--vertical-center {
+    vertical-align: middle;
+  }
+
+  /*
+  Sizes
+   */
+  &--small {
+    width: 12px;
+    height: 12px;
+  }
+
+  &--medium {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--large {
+    width: 24px;
+    height: 24px;
+  }
+
+  /*
+  Icons
+   */
+  &--arrow-up {
+    background-image: url('/assets/images/arrow.svg');
+    transform: rotate(270deg);
+  }
+
+  &--arrow-up {
+    background-image: url('/assets/images/arrow.svg');
+    transform: rotate(180deg);
+  }
+
+  &--arrow-down {
+    background-image: url('/assets/images/arrow.svg');
+    transform: rotate(90deg);
+  }
+
+  &--arrow-right {
+    background-image: url('/assets/images/arrow.svg');
+  }
+}

@@ -1,0 +1,71 @@
+.Text {
+  color: #151C1A;
+  /*
+  Placement
+   */
+  &--vertical-center {
+    vertical-align: middle;
+  }
+
+
+  /*
+  Font Face
+   */
+  font-family: 'Geomanist';
+  &--book {
+    font-family: 'Geomanist Book';
+  }
+
+  &--bold {
+    font-family: 'Geomanist Bold';
+  }
+
+  /*
+  Semantic Measurements
+   */
+  &--h1 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  &--h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  &--h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &--copy {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &--detail {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /*
+  Colors
+   */
+  &--green {
+    color: map-get($colors, green);
+  }
+
+  &--light-green {
+    color: map-get($colors, light-green);
+  }
+
+  &--pink {
+    color: map-get($colors, pink);
+  }
+
+  &--dark-green {
+    color: map-get($colors, dark-green);
+  }
+}
