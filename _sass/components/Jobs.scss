@@ -1,0 +1,62 @@
+.Jobs {
+  padding: 60px 30px 80px;
+
+  &__list {
+    margin-top: 40px;
+
+    @media ($tablet) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__position {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid map-get($colors, lightest-green);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+
+    &:hover {
+      border-color: map-get($colors, pink);
+    }
+
+    @media ($tablet) {
+      font-size: 24px;
+      margin: 15px 0;
+      padding: 40px 50px 90px;
+      flex-basis: 48%;
+    }
+
+    @media ($desktop) {
+      flex-basis: 31%;
+    }
+  }
+
+  &__link {
+    color: map-get($colors, green);
+    width: 50%;
+
+    @media ($tablet) {
+      width: 80%;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media ($tablet) {
+      bottom: 40px;
+      left: 50px;
+      right: auto;
+      top: auto;
+      transform: translateY(0);
+    }
+  }
+}
