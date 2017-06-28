@@ -1,0 +1,21 @@
+<div class="Box Box--section">
+
+  <div class="Jobs">
+    <div class="Text Text--h2 Text--bold">Check out our open positions</div>
+
+    <div class="Jobs__list">
+      {% for job in site.jobs %}
+        <div class="Jobs__position">
+          <a class="Link Link--thin" href="{{ job.href }}" target="_blank">
+            <div class="Jobs__link">
+              {{ job.title }}
+            </div>
+            <div class="Jobs__arrow">
+              <span class="Icon Icon--large Icon--vertical-center Icon--arrow-right"></span>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
