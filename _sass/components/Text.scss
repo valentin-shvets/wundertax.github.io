@@ -58,6 +58,11 @@
   &--copy {
     font-size: 16px;
     line-height: 24px;
+
+    @media ($tablet) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   &--detail {
@@ -84,8 +89,8 @@
     color: map-get($colors, lighter-green);
   }
 
-  &--pink {
-    color: map-get($colors, pink);
+  &--red {
+    color: map-get($colors, red);
   }
 
   &--dark-green {

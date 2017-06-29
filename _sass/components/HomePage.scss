@@ -1,7 +1,13 @@
 .HomePage {
   &__headline {
-    padding: 10px;
-    padding-top: 60px;
-    padding-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 130px);
+    justify-content: center;
+    padding: 0 10px;
+
+    @media ($tablet) {
+      height: calc(100vh - 180px);
+    }
   }
 }

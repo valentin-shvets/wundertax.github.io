@@ -3,7 +3,6 @@
   -webkit-background-size: contain;
   background-size: contain;
   display: inline-block;
-  margin-left: 10px;
 
   /*
   Placement
@@ -33,23 +32,23 @@
   /*
   Icons
    */
-  &--pink-arrow-up {
-    background-image: url('/assets/images/arrow-pink.svg');
+  &--red-arrow-up {
+    background-image: url('/assets/images/arrow-red.svg');
     transform: rotate(270deg);
   }
 
-  &--pink-arrow-left {
-    background-image: url('/assets/images/arrow-pink.svg');
+  &--red-arrow-left {
+    background-image: url('/assets/images/arrow-red.svg');
     transform: rotate(180deg);
   }
 
-  &--pink-arrow-down {
-    background-image: url('/assets/images/arrow-pink.svg');
+  &--red-arrow-down {
+    background-image: url('/assets/images/arrow-red.svg');
     transform: rotate(90deg);
   }
 
-  &--pink-arrow-right {
-    background-image: url('/assets/images/arrow-pink.svg');
+  &--red-arrow-right {
+    background-image: url('/assets/images/arrow-red.svg');
   }
 
   &--white-arrow-up {

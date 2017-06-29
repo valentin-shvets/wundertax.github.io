@@ -3,6 +3,11 @@
   padding-bottom: 50px;
   padding-top: 60px;
 
+  @media ($tablet) {
+    padding-bottom: 180px;
+    padding-top: 130px;
+  }
+
   &__members {
     display: flex;
     flex-direction: row;
@@ -12,6 +17,7 @@
 
     @media ($tablet) {
       margin-right: -30px;
+      padding-top: 60px;
     }
   }
 

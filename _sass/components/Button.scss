@@ -3,6 +3,7 @@
   border: 1px solid;
   display: inline-flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 10px 20px;
 
   /*
@@ -19,11 +20,41 @@
   /*
   Semantic
    */
-  &--cta {
-    padding: 15px 20px;
+  &--hiring {
+    border-color: map-get($colors, red);
+
+    &:hover {
+      background-color: map-get($colors, red);
+      color: white;
+
+      .Button__hover {
+        display: inline-block;
+      }
+
+      .Button__no-hover {
+        display: none;
+      }
+    }
+  }
+  &--new-member {
+    background-color: map-get($colors, lighter-green);
+    border-color: map-get($colors, lighter-green);
+    color: white;
+    padding: 30px 20px;
+
+    &:hover {
+      background-color: map-get($colors, green);
+      border-color: map-get($colors, green);
+    }
 
     &.Button--full-height {
-      height: calc(100% - 30px);
+      height: calc(100% - 60px);
+    }
+
+    @media ($tablet) {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
 
@@ -34,18 +65,5 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-  }
-
-  /*
-  Colors
-   */
-  &--pink {
-    border-color: map-get($colors, pink);
-  }
-
-  &--lighter-green {
-    background-color: map-get($colors, lighter-green);
-    border-color: map-get($colors, lighter-green);
-    color: white;
   }
 }

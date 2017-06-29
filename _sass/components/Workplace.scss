@@ -1,6 +1,11 @@
 .Workplace {
   padding: 60px 10px;
 
+  @media ($tablet) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
   &__culture {
     padding-top: 20px;
     padding-bottom: 60px;

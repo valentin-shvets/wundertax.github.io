@@ -1,13 +1,15 @@
 .Footer {
   background-color: white;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
+  justify-content: space-between;
   overflow: auto;
   padding: 50px 30px;
 
-  &__copyright {
-    @media ($tablet) {
-      float: left;
-    }
+  @media ($tablet) {
+    padding: 26px 30px;
+    flex-direction: row;
   }
 
   &__links-container {

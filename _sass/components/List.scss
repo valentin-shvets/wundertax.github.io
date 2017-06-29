@@ -25,6 +25,10 @@ $_circle-width-l: 65px;
   &__item {
     margin-bottom: 30px;
 
+    @media ($tablet) {
+      margin-bottom: 60px;
+    }
+
     &--flex-2 {
       @media ($tablet) {
         box-sizing: border-box;

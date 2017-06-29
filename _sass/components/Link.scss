@@ -3,8 +3,16 @@
   font-family: 'Geomanist Book';
   text-decoration: none;
 
-  &--pink {
-    color: map-get($colors, pink);
+  &:hover {
+    color: map-get($colors, dark-green);
+  }
+
+  &--red {
+    color: map-get($colors, red);
+
+    &:hover {
+      color: map-get($colors, dark-red);
+    }
   }
 
   &--thin {
