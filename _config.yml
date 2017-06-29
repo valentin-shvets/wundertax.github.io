@@ -18,7 +18,6 @@ email: support@wundertax.de
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.wundertax.de" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: wundertax
 google_analytics: ""
 company_name: wundertax GmbH
 

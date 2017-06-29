@@ -1,5 +1,4 @@
 .Shift {
-
   /*
   Measurements
    */
@@ -11,7 +10,7 @@
   Media
    */
   &--from-tablet {
-    @media ($before-tablet) {
+    @media ($until-tablet) {
       margin-left: 0;
     }
   }
