@@ -1,0 +1,69 @@
+$_circle-width-s: 50px;
+$_circle-width-l: 65px;
+
+.List {
+  padding: 0;
+  margin: 0;
+
+  &--ordered {
+    list-style: none;
+    counter-reset: ordered-list;
+  }
+
+  &--bullet {
+    list-style: none;
+  }
+
+  &--flex {
+    @media ($tablet) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    &--flex {
+      @media ($tablet) {
+        flex-basis: 48%;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  &__item--ordered {
+    counter-increment: ordered-list;
+    line-height: 24px;
+    min-height: $_circle-width-s;
+    padding-left: $_circle-width-s + 20px;
+    position: relative;
+
+    @media ($tablet) {
+      padding-left: $_circle-width-l + 20px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &:before {
+      background-color: map-get($colors, lightest-green);
+      border-radius: 50%;
+      color: white;
+      content: counter(ordered-list);
+      font-family: 'Geomanist Book';
+      height: $_circle-width-s;
+      left: 0;
+      line-height: $_circle-width-s;
+      position: absolute;
+      text-align: center;
+      width: $_circle-width-s;
+
+      @media ($tablet) {
+        height: $_circle-width-l;
+        line-height: $_circle-width-l;
+        width: $_circle-width-l;
+      }
+    }
+  }
+}
