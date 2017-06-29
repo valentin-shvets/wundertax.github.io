@@ -57,14 +57,14 @@
 
     &--join {
       flex-basis: 100%;
-      margin-right: auto;
       height: 60px;
+      margin-right: auto;
     }
 
     @media ($tablet) {
+      height: 180px;
       margin-right: 30px;
       width: 160px;
-      height: 180px;
 
       &--join {
         flex-basis: auto;

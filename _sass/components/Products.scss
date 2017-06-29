@@ -2,8 +2,8 @@
   padding: 40px 10px;
 
   @media ($tablet) {
-    padding-top: 130px;
     padding-bottom: 130px;
+    padding-top: 130px;
   }
 
   &__mission {
@@ -29,18 +29,16 @@
   }
 
   &__product {
+    align-items: center;
     border: 1px solid map-get($colors, lightest-green);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 100px;
     justify-content: center;
     margin: 10px 0;
     text-align: center;
     width: 280px;
-    height: 100px;
 
     @media ($tablet) {
       margin: 15px 0;
@@ -49,23 +47,21 @@
     &-logo {
       background: no-repeat center;
       background-size: contain;
-      width: 149px;
       height: 46px;
+      width: 149px;
     }
 
     &:hover {
-      -webkit-box-shadow: 0 2px 20px 0 #E9F1F0;
-      -moz-box-shadow: 0 2px 20px 0 #E9F1F0;
       box-shadow: 0 2px 20px 0 #E9F1F0;
     }
 
     @media ($tablet) {
-      width: 350px;
       height: 130px;
+      width: 350px;
 
       &-logo {
-        width: 223px;
         height: 70px;
+        width: 223px;
       }
     }
   }
