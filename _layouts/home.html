@@ -2,11 +2,27 @@
 layout: base
 ---
 <div class="HomePage">
-  {% include_relative _includes/home/headline.html %}
+  <div class="Container">
+    {% include_relative _includes/home/headline.html %}
+  </div>
 
-  {% include_relative _includes/home/products.html %}
+  <div class="Box">
+    <div class="Container">
+      {% include_relative _includes/home/products.html %}
+    </div>
+  </div>
 
-  {% include_relative _includes/home/team.html %}
+  <div class="Container">
+    {% include_relative _includes/home/team.html %}
+  </div>
 
-  {% include_relative _includes/home/jobs.html %}
+  <div class="Box">
+    <div class="Container">
+      Workplace
+    </div>
+  </div>
+
+  <div class="Container">
+    {% include_relative _includes/home/jobs.html %}
+  </div>
 </div>

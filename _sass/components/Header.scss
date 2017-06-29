@@ -3,7 +3,17 @@
 
   &__logo {
     background: url("/assets/images/logo.svg") no-repeat center;
+    background-size: contain;
     height: 30px;
     width: 40px;
+  }
+
+  @media ($tablet) {
+    padding-top: 25px;
+
+    &__logo {
+      width: 65px;
+      height: 50px;
+    }
   }
 }

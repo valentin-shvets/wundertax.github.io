@@ -1,5 +1,5 @@
 .Jobs {
-  padding: 60px 30px 80px;
+  padding: 60px 10px 80px;
 
   &__list {
     margin-top: 40px;
@@ -22,6 +22,10 @@
 
     &:hover {
       border-color: map-get($colors, pink);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
     @media ($tablet) {

@@ -1,15 +1,17 @@
 .Team {
-  padding: 30px;
+  padding: 10px;
+  padding-bottom: 50px;
+  padding-top: 60px;
 
   &__members {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
   }
 
   &__member {
+    margin: 10px 0;
     position: relative;
 
     &-photo {
@@ -37,6 +39,14 @@
     &:focus {
       .Team__member-info {
         visibility: visible;
+      }
+    }
+
+    &--join {
+      flex-basis: 100%;
+
+      @media ($tablet) {
+        flex-basis: auto;
       }
     }
   }

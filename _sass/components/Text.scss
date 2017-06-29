@@ -1,12 +1,5 @@
 .Text {
   color: #151C1A;
-  /*
-  Placement
-   */
-  &--vertical-center {
-    vertical-align: middle;
-  }
-
 
   /*
   Font Face
@@ -27,6 +20,12 @@
     font-size: 36px;
     line-height: 40px;
     margin-bottom: 40px;
+    
+    @media ($tablet) {
+      font-size: 64px;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
   }
 
   &--h2 {
