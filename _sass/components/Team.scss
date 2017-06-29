@@ -42,6 +42,18 @@
       }
     }
 
+    @media ($tablet) {
+      &-photo {
+        width: 160px;
+        height: 180px;
+      }
+
+      &-info {
+        justify-content: flex-end;
+        padding: 20px;
+      }
+    }
+
     &--join {
       flex-basis: 100%;
 
