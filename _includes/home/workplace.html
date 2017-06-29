@@ -1,3 +1,33 @@
 <div class="Workplace">
 
+  <div class="Shift Shift--1 Shift--from-tablet">
+    <div class="Text Text--h2 Text--bold">At wundertax,<br/>we ...</div>
+  </div>
+
+  <div class="Shift Shift--1 Shift--from-tablet">
+    <div class="Workplace__culture">
+      <ul class="List List--ordered List--flex">
+        {% for item in site.data.culture %}
+          <li class="List__item List__item--ordered List__item--flex-2">{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="Shift Shift--1 Shift--from-tablet">
+    <img src="assets/images/office.jpg" alt="wundertax office" class="Workplace__office" />
+  </div>
+
+  <div class="Shift Shift--1 Shift--from-tablet">
+    <div class="Text Text--h3 Text--pink">And.. it’s also fun to work with us:</div>
+  </div>
+
+
+  <div class="Workplace__benefits">
+    <ul class="List List--bullet List--flex">
+      {% for item in site.data.benefits %}
+        <li class="List__item List__item--bullet List__item--flex-3">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
