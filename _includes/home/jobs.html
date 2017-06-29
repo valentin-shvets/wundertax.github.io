@@ -3,16 +3,14 @@
 
   <div class="Jobs__list">
     {% for job in site.jobs %}
-    <div class="Jobs__position">
-      <a class="Link Link--thin" href="{{ job.href }}" target="_blank">
+    <a class="Jobs__position" href="{{ job.href }}" target="_blank">
         <div class="Jobs__link">
           {{ job.title }}
         </div>
         <div class="Jobs__arrow">
           <span class="Icon Icon--large Icon--vertical-center Icon--pink-arrow-right"></span>
         </div>
-      </a>
-    </div>
+    </a>
     {% endfor %}
   </div>
 </div>
