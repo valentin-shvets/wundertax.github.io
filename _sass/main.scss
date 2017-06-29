@@ -1,8 +1,10 @@
 @import "typo";
 @import "colors";
 @import "breakpoints";
+@import "grid";
 
 @import "components/Container";
+@import "components/Shift";
 @import "components/Header";
 @import "components/Footer";
 @import "components/Text";
