@@ -2,12 +2,12 @@ $_circle-width-s: 50px;
 $_circle-width-l: 65px;
 
 .List {
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   &--ordered {
-    list-style: none;
     counter-reset: ordered-list;
+    list-style: none;
   }
 
   &--bullet {
@@ -25,10 +25,17 @@ $_circle-width-l: 65px;
   &__item {
     margin-bottom: 30px;
 
-    &--flex {
+    &--flex-2 {
       @media ($tablet) {
-        flex-basis: 48%;
         box-sizing: border-box;
+        flex-basis: 48%;
+      }
+    }
+
+    &--flex-3 {
+      @media ($tablet) {
+        box-sizing: border-box;
+        flex-basis: 30%;
       }
     }
   }
@@ -41,9 +48,9 @@ $_circle-width-l: 65px;
     position: relative;
 
     @media ($tablet) {
-      padding-left: $_circle-width-l + 20px;
       font-size: 24px;
       line-height: 30px;
+      padding-left: $_circle-width-l + 20px;
     }
 
     &:before {
@@ -64,6 +71,37 @@ $_circle-width-l: 65px;
         line-height: $_circle-width-l;
         width: $_circle-width-l;
       }
+    }
+  }
+
+  &__item--bullet {
+    line-height: 20px;
+    padding-left: 30px;
+    position: relative;
+
+    @media ($tablet) {
+      padding-left: 40px;
+    }
+
+    &:before {
+      border-radius: 50%;
+      border: 1px solid map-get($colors, lighter-green);
+      content: '';
+      height: 20px;
+      left: 0;
+      position: absolute;
+      width: 20px;
+    }
+
+    &:after {
+      background-color:  map-get($colors, lighter-green);
+      border-radius: 50%;
+      content: '';
+      height: 8px;
+      left: 7px;
+      position: absolute;
+      top: 7px;
+      width: 8px;
     }
   }
 }
