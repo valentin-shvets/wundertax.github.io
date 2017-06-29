@@ -21,7 +21,7 @@
     {% for product in site.products %}
     <div class="Products__product">
       <a href="{{ product.href }}" target="_blank">
-        <img src="/assets/images/products/{{ product.name }}.svg"/>
+        <div class="Products__product-logo" style="background-image: url('/assets/images/products/{{ product.name }}.svg')"></div>
       </a>
     </div>
     {% endfor %}
