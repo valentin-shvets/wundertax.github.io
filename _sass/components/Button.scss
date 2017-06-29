@@ -12,11 +12,19 @@
     display: flex;
   }
 
+  &--full-height {
+    height: calc(100% - 20px);
+  }
+
   /*
   Semantic
    */
   &--cta {
     padding: 15px 20px;
+
+    &.Button--full-height {
+      height: calc(100% - 30px);
+    }
   }
 
   /*
