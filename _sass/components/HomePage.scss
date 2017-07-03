@@ -1,5 +1,6 @@
 .HomePage {
   &__headline {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     height: calc(100vh - 130px);

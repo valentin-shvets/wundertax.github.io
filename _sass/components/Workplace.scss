@@ -24,11 +24,15 @@
   }
 
   &__office {
-    max-width: 100%;
+    left: 50%;
     padding-bottom: 60px;
+    position: relative;
+    transform: translateX(-50%);
+    width: 100vw;
 
     @media ($tablet) {
       padding-bottom: 100px;
+      width: 100%;
     }
   }
 }

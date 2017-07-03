@@ -26,16 +26,9 @@
     &:hover {
       background-color: map-get($colors, red);
       color: white;
-
-      .Button__hover {
-        display: inline-block;
-      }
-
-      .Button__no-hover {
-        display: none;
-      }
     }
   }
+
   &--new-member {
     background-color: map-get($colors, lighter-green);
     border-color: map-get($colors, lighter-green);
@@ -65,5 +58,19 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+  }
+
+  .Button__hover {
+    display: none;
+  }
+
+  &:hover {
+    .Button__hover {
+      display: inline-block;
+    }
+
+    .Button__no-hover {
+      display: none;
+    }
   }
 }
