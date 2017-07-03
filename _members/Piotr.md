@@ -1,4 +1,4 @@
 ---
 name: Piotr
-title: Software Developer
+title: Full Stack Developer
 ---

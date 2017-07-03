@@ -1,4 +1,4 @@
 ---
 name: Irmela
-title: Software Developer
+title: Full Stack Developer
 ---

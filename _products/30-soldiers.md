@@ -1,4 +1,4 @@
 ---
 name: soldiers
-href: https://www.soldatensteuererklaerung.de
+href: https://www.bundeswehrsteuererklaerung.de
 ---
