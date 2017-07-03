@@ -17,13 +17,16 @@
 
 There are three types of content that are based on [Jekyll Collections](https://jekyllrb.com/docs/collections/).
 
-You can add, remove and update entries in those collections by simply adding, removing and/or update files with
-[Front Matter](https://jekyllrb.com/docs/frontmatter/), with the structure explained next for each type, along with any needed
+You can add, remove and update entries in those collections by simply adding, removing and/or update
+[Front Matter](https://jekyllrb.com/docs/frontmatter/) files under their corresponding folders,
+with the structure explained next for each type, along with any needed
 assets.
 
 **Note**: _Entries in collection appear on the site in the alphabetical order of their filenames._
 
 #### Jobs
+
+Folder: **/_jobs/**
 
 ```
 ---
@@ -37,6 +40,8 @@ and use this url format in href above to link to it: `/assets/<sub/folders/if/an
 
 #### Members
 
+Folder: **/_members/**
+
 ```
 ---
 name: <put here the member first name. this will appear on top of the photo, above the title, on hover/focus effect>
@@ -48,6 +53,8 @@ Team member photos are PNGs that reside under `/assets/images/members/`. Put mem
 and name the file with member `name` used in the Front Matter file above.
 
 #### Products
+
+Folder: **/_products/**
 
 ```
 ---
