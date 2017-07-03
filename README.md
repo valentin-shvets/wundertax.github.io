@@ -1,7 +1,6 @@
-# Wundertax Website
-Wundertax
+# Wundertax
 
-This website is a statically generated github pages site. So yes, it uses [Jekyll](https://jekyllrb.com/) as it's template engine.
+[Github Pages](https://pages.github.com/) site for [Wundertax](http://wundertax.de) homepage. So yes, it uses [Jekyll](https://jekyllrb.com/) as it's template engine.
 
 ## Development & Content Management
 
