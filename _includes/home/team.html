@@ -1,0 +1,27 @@
+<div class="Team">
+  <div class="Text Text--h2 Text--bold">
+    Meet.<br />
+    the.<br />
+    team.<br />
+  </div>
+
+  <div class="Team__members">
+    {% for member in site.members %}
+      <div class="Team__member">
+        <img class="Team__member-photo" src="/assets/images/members/{{member.name}}.png" />
+        <div class="Team__member-info">
+          <div class="Text Text--book Text--lighter-green Text--h4">{{member.name}}</div>
+          <div class="Text Text--white Text--detail">{{member.title}}</div>
+        </div>
+      </div>
+    {% endfor %}
+    <div class="Team__member Team__member--join">
+      <a class="Link" href="#open-positions">
+        <div class="Button Button--new-member Button--full-width Button--full-height">
+          <span class="Text Text--vertical-center Text--white Text--cta">Open Positions</span>
+          <span class="Icon Icon--large Icon--white-arrow-down Icon--vertical-center"></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

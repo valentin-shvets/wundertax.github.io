@@ -1,0 +1,99 @@
+.Text {
+  color: #151C1A;
+
+  /*
+  Font Face
+   */
+  font-family: 'Geomanist';
+  &--book {
+    font-family: 'Geomanist Book';
+  }
+
+  &--bold {
+    font-family: 'Geomanist Bold';
+  }
+
+  /*
+  Semantic Measurements
+   */
+  &--h1 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+    @media ($tablet) {
+      font-size: 64px;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    @media ($tablet) {
+      font-size: 48px;
+      line-height: 50px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &--h3 {
+    font-size: 20px;
+    line-height: 20px;
+
+    @media ($tablet) {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+
+  &--cta {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &--copy {
+    font-size: 16px;
+    line-height: 24px;
+
+    @media ($tablet) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &--detail {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /*
+  Colors
+   */
+  &--white {
+    color: white;
+  }
+
+  &--green {
+    color: map-get($colors, green);
+  }
+
+  &--light-green {
+    color: map-get($colors, light-green);
+  }
+
+  &--lighter-green {
+    color: map-get($colors, lighter-green);
+  }
+
+  &--red {
+    color: map-get($colors, red);
+  }
+
+  &--dark-green {
+    color: map-get($colors, dark-green);
+  }
+}

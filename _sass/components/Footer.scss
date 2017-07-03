@@ -1,0 +1,58 @@
+.Footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 50px 30px;
+
+  @media ($tablet) {
+    padding: 26px 30px;
+    flex-direction: row;
+  }
+
+  &__links-container {
+    @media ($tablet) {
+      display: flex;
+      flex-flow: row wrap;
+      float: right;
+      justify-content: flex-end;
+    }
+  }
+
+  &__tool-link {
+    margin: 40px 0;
+
+    @media ($tablet) {
+      flex: 0 0 auto;
+      order: 2;
+      margin: 0;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media ($tablet) {
+      flex: 0 0 auto;
+      order: 1;
+    }
+  }
+
+  &__link {
+    margin-bottom: 20px;
+
+    @media ($tablet) {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+}

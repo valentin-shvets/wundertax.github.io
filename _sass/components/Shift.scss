@@ -1,0 +1,17 @@
+.Shift {
+  /*
+  Measurements
+   */
+  &--1 {
+    margin-left: $column-width + $gutter-width;
+  }
+
+  /*
+  Media
+   */
+  &--from-tablet {
+    @media ($until-tablet) {
+      margin-left: 0;
+    }
+  }
+}

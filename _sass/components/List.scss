@@ -1,0 +1,111 @@
+$_circle-width-s: 50px;
+$_circle-width-l: 65px;
+
+.List {
+  margin: 0;
+  padding: 0;
+
+  &--ordered {
+    counter-reset: ordered-list;
+    list-style: none;
+  }
+
+  &--bullet {
+    list-style: none;
+  }
+
+  &--flex {
+    @media ($tablet) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @media ($tablet) {
+      margin-bottom: 60px;
+    }
+
+    &--flex-2 {
+      @media ($tablet) {
+        box-sizing: border-box;
+        flex-basis: 48%;
+      }
+    }
+
+    &--flex-3 {
+      @media ($tablet) {
+        box-sizing: border-box;
+        flex-basis: 30%;
+      }
+    }
+  }
+
+  &__item--ordered {
+    counter-increment: ordered-list;
+    line-height: 24px;
+    min-height: $_circle-width-s;
+    padding-left: $_circle-width-s + 20px;
+    position: relative;
+
+    @media ($tablet) {
+      font-size: 24px;
+      line-height: 30px;
+      padding-left: $_circle-width-l + 20px;
+    }
+
+    &:before {
+      background-color: map-get($colors, lightest-green);
+      border-radius: 50%;
+      color: white;
+      content: counter(ordered-list);
+      font-family: 'Geomanist Book';
+      height: $_circle-width-s;
+      left: 0;
+      line-height: $_circle-width-s;
+      position: absolute;
+      text-align: center;
+      width: $_circle-width-s;
+
+      @media ($tablet) {
+        height: $_circle-width-l;
+        line-height: $_circle-width-l;
+        width: $_circle-width-l;
+      }
+    }
+  }
+
+  &__item--bullet {
+    line-height: 20px;
+    padding-left: 30px;
+    position: relative;
+
+    @media ($tablet) {
+      padding-left: 40px;
+    }
+
+    &:before {
+      border-radius: 50%;
+      border: 1px solid map-get($colors, lighter-green);
+      content: '';
+      height: 20px;
+      left: 0;
+      position: absolute;
+      width: 20px;
+    }
+
+    &:after {
+      background-color:  map-get($colors, lighter-green);
+      border-radius: 50%;
+      content: '';
+      height: 8px;
+      left: 7px;
+      position: absolute;
+      top: 7px;
+      width: 8px;
+    }
+  }
+}

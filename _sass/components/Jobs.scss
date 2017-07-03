@@ -1,0 +1,68 @@
+.Jobs {
+  padding: 60px 10px 80px;
+
+  @media ($tablet) {
+    padding-bottom: 180px;
+    padding-top: 130px;
+  }
+
+  &__list {
+    margin-top: 40px;
+
+    @media ($tablet) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      margin-right: -30px;
+      padding-top: 60px;
+    }
+  }
+
+  &__position {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid map-get($colors, lightest-green);
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
+
+    &:hover {
+      border-color: map-get($colors, red);
+    }
+
+    @media ($tablet) {
+      font-size: 24px;
+      margin: 15px 0;
+      margin-right: 30px;
+      padding: 40px 50px 90px;
+      width: 350px;
+    }
+  }
+
+  &__link {
+    color: map-get($colors, green);
+    width: 50%;
+
+    @media ($tablet) {
+      width: 80%;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media ($tablet) {
+      bottom: 40px;
+      left: 50px;
+      right: auto;
+      top: auto;
+      transform: translateY(0);
+    }
+  }
+}

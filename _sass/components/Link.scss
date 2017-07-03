@@ -1,0 +1,21 @@
+.Link {
+  color: map-get($colors, light-green);
+  font-family: 'Geomanist Book';
+  text-decoration: none;
+
+  &:hover {
+    color: map-get($colors, dark-green);
+  }
+
+  &--red {
+    color: map-get($colors, red);
+
+    &:hover {
+      color: map-get($colors, dark-red);
+    }
+  }
+
+  &--thin {
+    font-family: 'Geomanist';
+  }
+}
