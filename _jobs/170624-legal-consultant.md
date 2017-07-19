@@ -1,4 +1,4 @@
 ---
 title: Legal Consultant Tax
-href: https://www.studentensteuererklaerung.de/open_positions/Job_offer_Legal.pdf
+href: http://www.wundertax.de/assets/open_positions/Job_offer_Legal.pdf
 ---
