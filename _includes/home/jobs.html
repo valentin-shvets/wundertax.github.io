@@ -2,7 +2,7 @@
   <div class="Text Text--h2 Text--bold">Check out<br/> our open positions</div>
 
   <div class="Jobs__list">
-    {% for job in site.jobs %}
+    {% for job in site.jobs reversed %}
     <a class="Jobs__position" href="{{ job.href }}" target="_blank">
         <div class="Jobs__link">
           {{ job.title }}
