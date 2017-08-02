@@ -28,6 +28,8 @@ assets.
 
 Folder: **/_jobs/**
 
+**Note**: _Entries in collection appear on the site in the *reversed* alphabetical order of their filenames._
+
 ```
 ---
 title: <put here the title of the position. this will appear in the position box on the page>
