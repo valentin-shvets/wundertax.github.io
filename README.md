@@ -28,7 +28,7 @@ assets.
 
 Folder: **/_jobs/**
 
-**Note**: _Entries in collection appear on the site in the *reversed* alphabetical order of their filenames._
+**Note**: _Entries in collection appear on the site in the **reversed** alphabetical order of their filenames._
 
 ```
 ---
