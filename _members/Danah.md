@@ -1,4 +1,4 @@
 ---
 name: Danah
-title: Customer Service Agent
+title: Legal & Accounting
 ---
