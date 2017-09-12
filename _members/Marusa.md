@@ -1,4 +1,4 @@
 ---
-name: Marusa
+name: Maruša
 title: Software Development Intern
 ---
