@@ -1,4 +1,4 @@
 ---
 name: Christoph
-title: Product Management
+title: Product Manager
 ---
